@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Day - Gaikwad Corp</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1f2b30;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px; /* Creates space for floating button */
+        }
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .header-section {
+            height: 20%;
+            font-size: calc(14.4px + 1.2vw);
+            font-weight: bold;
+        }
+        .image-section {
+            height: 46%;
+        }
+        .description-section {
+            height: 35%;
+        }
+        .description-section img {
+            max-width: 82%;
+            height: auto;
+        }
+        .highlight {
+            color: #ff4a4a;
+            font-weight: bold;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        img.responsive-image {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+        }
+        /* Updated WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 10px; /* Lower position to avoid overlap */
+            right: 10px; /* Slightly inward */
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Section 1: Header -->
+<div class="section header-section" style="position: relative;">
+    <p style="position: relative; display: inline-block;">
+        Always Upright
+        <img src="images/logo-removebg-preview.png" alt="Icon" style="position: absolute; top: 0; right: -30px; width: 20px; height: 20px;">
+    </p>
+</div>
+
+<!-- Section 2: Image Section -->
+<div class="section image-section">
+    <img src="images/gaikwadCorp_logo-removebg-preview.png" alt="Women's Day Banner" class="responsive-image">
+</div>
+
+<!-- Section 3: Description Section (with image) -->
+<div class="section description-section">
+    <img src="images/image.png" alt="OPTIMAX LIVING - Coming Soon to West Pune">
+</div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/0053d4a2f2.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
